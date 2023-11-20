@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f5EBB8;
 }
 
-.App-link {
-  color: #61dafb;
+.main-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color:#2B3121;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-menu li {
+  padding: 15px 20px;
+  position: relative; 
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.main-menu li:hover .sub-menu {
+  display: block; /* Show sub-menu on hover */
+}
+
+.sub-menu {
+  display: none; /* Hide sub-menu initially */
+  position: absolute; /* Positioning the sub-menu */
+  left: 0; 
+  top: 100%; /* Position the sub-menu below the menu item */
+  background-color: #EBBF1E;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px; /* Set a fixed width or as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.sub-menu li {
+  border-bottom: 1px solid #dcd4c0;
+}
+
+.sub-menu li:last-child {
+  border-bottom: none;
+}
+
+.sub-menu li a {
+  padding: 10px; /* Adjust padding for sub-menu items */
+  color: #333; /* Text color for sub-menu items */
+  background-color: transparent; /* No background color initially */
+  display: block; /* Ensure the full area is clickable */
+  transition: background-color 0.3s ease;
+}
+
+.sub-menu li a:hover {
+  background-color: #c8c8c8; /* Background color on hover */
 }

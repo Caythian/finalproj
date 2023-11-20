@@ -2,12 +2,38 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Gamedesign from './Gamedesign';
+import Escapism from './Escapism';
+import More from './More';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+reportWebVitals();
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+  },
+  {
+    path: "/gamedesign",
+    element: <Gamedesign/>,
+  },
+  {
+    path: "/escapism",
+    element: <Escapism/>,
+  },
+  {
+    path: "/more",
+    element: <More/>,
+  }
+]);
 root.render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router} />
   </React.StrictMode>
 );
 
