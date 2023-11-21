@@ -27,22 +27,25 @@
 }
 
 .main-menu li:hover .sub-menu {
-  display: block; /* Show sub-menu on hover */
+  display: grid; /* Use grid to create the layout */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates columns with equal width */
+  gap: 10px; /* Space between grid items */
+  padding: 10px; /* Padding inside the grid */
 }
 
 .sub-menu {
   display: none; /* Hide sub-menu initially */
-  position: absolute; /* Positioning the sub-menu */
-  left: 0; 
-  top: 100%; /* Position the sub-menu below the menu item */
+  position: absolute;
+  left: 0;
+  top: 100%;
   background-color: #EBBF1E;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-width: 200px; /* Set a fixed width or as needed */
-  z-index: 1000; /* Ensure it's above other content */
+  width: 100%; /* Set the width of the submenu to match the parent */
+  z-index: 1000;
 }
 
 .sub-menu li {
-  border-bottom: 1px solid #dcd4c0;
+  border-bottom: none; /* Remove the border as it's now a grid */
 }
 
 .sub-menu li:last-child {
