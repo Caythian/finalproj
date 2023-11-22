@@ -1,41 +1,37 @@
 import React from 'react';
 import '../App.css';
+import '../Components/Menu.css';
 import { Link } from 'react-router-dom';
 
 function Menu() {
   return (
     <div className="menu-container">
       <ul className="main-menu">
-        <li>
+        <li className="subpage">
           <Link to='/'>About</Link>
           <ul className="sub-menu">
-            {/* here is where to put the subtitles */}
-            <li><Link to='/about/history'>History</Link></li>
-            <li><Link to='/about/team'>Team</Link></li>
+            <li><Link to='/about/sub1'>sub1</Link></li>
+            <li><Link to='/about/sub2'>sub2</Link></li>
           </ul>
         </li>
-        <li>
+        <li className="subpage">
           <Link to='/gamedesign'>Game Design</Link>
           <ul className="sub-menu">
-            <li><Link to='/gamedesign/history'>History</Link></li>
-            <li><Link to='/gamedesign/team'>Team</Link></li>
+            <li><Link to='/gamedesign/sub1'>sub1</Link></li>
+            <li><Link to='/gamedesign/sub2'>sub2</Link></li>
+            <li><Link to='/gamedesign/sub3'>sub3</Link></li>
           </ul>
         </li>
-        <li>
+        <li className="subpage">
           <Link to='/escapism'>Escapism</Link>
           <ul className="sub-menu">
-            <li><Link to='/escapism/history'>History</Link></li>
-            <li><Link to='/escapism/team'>Team</Link></li>
-            <li><Link to='/escapism/about'>About</Link></li>
+            <li><Link to='/escapism/sub1'>sub1</Link></li>
+            <li><Link to='/escapism/sub2'>sub2</Link></li>
           </ul>
         </li>
-        <li>
+        <li className="subpage">
           <Link to='/more'>More</Link>
-          <ul className="sub-menu">
-            <li><Link to='/more/history'>History</Link></li>
-            <li><Link to='/more/team'>Team</Link></li>
-            <li><Link to='/more/about'>More</Link></li>
-          </ul>
+          {/* If more has sub-menus, they should go here within this li */}
         </li>
       </ul>
     </div>
