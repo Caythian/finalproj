@@ -8,10 +8,8 @@ function Menu() {
     <div className="menu-container">
       <ul className="main-menu">
         <li className="subpage">
-          <Link to='/'>About</Link>
+          <Link to='/'>Home</Link>
           <ul className="sub-menu">
-            <li><Link to='/about/sub1'>sub1</Link></li>
-            <li><Link to='/about/sub2'>sub2</Link></li>
           </ul>
         </li>
         <li className="subpage">
@@ -31,7 +29,13 @@ function Menu() {
         </li>
         <li className="subpage">
           <Link to='/more'>More</Link>
-          {/* If more has sub-menus, they should go here within this li */}
+        </li>
+        <li className="subpage">
+          <Link to='/about'>About</Link>
+          <ul className="sub-menu">
+            <li><Link to='/about/sub1'>sub1</Link></li>
+            <li><Link to='/about/sub2'>sub2</Link></li>
+          </ul>
         </li>
       </ul>
     </div>

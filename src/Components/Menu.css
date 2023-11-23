@@ -1,10 +1,14 @@
 .menu-container {
     display: flex;
-    align-items: center;
+    align-items:baseline;
     justify-content: space-around;
-    padding: 10px;
     background-color: #f5EBB8;
+    padding: 10px;
   }
+.main-menu:hover{
+    height: 250px; 
+    /* change the height here to adapt to media */
+}
 .main-menu {
     list-style-type:none;
     margin: 0;
@@ -16,7 +20,6 @@
 .main-menu li {
     transition: background-color 0.3s ease;
     transition: font-weight 0.3s ease;
-    padding: 12px 20px;
     position: relative; 
     font-size: larger;
   }
@@ -26,46 +29,41 @@
 .main-menu li a {
     text-decoration: none;
     color: #2B3121;
-
 }
 .subpage {
-    position: relative; /* This is needed to position the submenu absolutely with respect to the subpage */
+    position: absolute; 
     width: 150px;
-    line-height: 20px;
-    font-weight:normal;
-  }  
+    line-height: 20px;  
+    padding:15px;
+    text-align:center;
+}  
 .subpage:hover{
     font-weight: bold;
     background-color: #EBBF1B;
 }
-.subpage:hover .sub-menu {
+.main-menu:hover .sub-menu {
     display: flex; 
 }
 .sub-menu {
     display: none; 
     font-size: medium;
     font-weight: normal;
-    list-style-type:none;
-    position: absolute; /* Position the sub-menu directly below the main menu item */
+    list-style-type:none; 
     left: 0;
     top: 100%;
-    background-color: #f5EBB8;
     width: 100%; /* Set the width of the sub-menu */
     flex-direction: column; /* Stack submenu items vertically */
-    padding: 0; /* Reset padding */
-  } 
-.sub-menu li {
-    color: #2B3121; 
-  }
+    padding: 20px 0; 
+} 
 .sub-menu li:last-child {
     border-bottom: none;
   }
 .sub-menu li a {
-    color: #595936; 
     font-weight: normal;
-    display: block; /* Ensure the full area is clickable */
+    display: block; 
+    color:#595936;
     text-decoration: none; 
-    padding: 10px;
+    padding: 15px 0;
   }
 .sub-menu li a:hover {
     color:#2B3121;
