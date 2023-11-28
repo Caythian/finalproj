@@ -1,11 +1,32 @@
 import './App.css';
+import React,{useState,useEffect} from 'react';
 import Menu from './Components/Menu';
 import Footer from './Components/Footer';
 import {Placeholder, Divider,Bodylimager,Bodyrimagel} from './Components/Format';
-import { Routes, Route } from 'react-router-dom';
-import testimg from './Images/Berlin-69.jpg';
+import ImageSection from './Components/Imagereveal';
+import testImage from './Images/Berlin-69.jpg';
+import testImage2 from './Images/test.png';
 
 function About(){
+    const [showImage, setShowImage] = useState(false);
+
+    const handleScroll = () => {
+    const imageSection = document.getElementById('image-reveal-section');
+  
+    // Check if the element exists
+    if (imageSection) {
+      const imageSectionTop = imageSection.getBoundingClientRect().top;
+      const imageSectionHeight = imageSection.getBoundingClientRect().height;
+      const windowHeight = window.innerHeight;
+  
+      if (imageSectionTop <= windowHeight && imageSectionTop >= -imageSectionHeight) {
+        setShowImage(true);
+      } else {
+        setShowImage(false);
+      }
+    }
+};
+
     return(
         <div>
         <Menu/>
@@ -14,10 +35,17 @@ function About(){
         <div className="title">Welcome to Our Gaming Odyssey</div>
         <Divider/>
         <div className="subtitle">our journey begins</div>
+        <ImageSection backgroundImage={testImage}>
+            <div className="description">
+                source:            
+            </div>
+        </ImageSection>
         <div className="body">
         Growing up, video games were a taboo in my household. My parents firmly believed that gaming would lead to a violent and intellectually deficient upbringing. However, my persistent passion for gaming eventually softened their stance, granting me a precious half-hour each weekend to dive into virtual worlds under their careful supervision. This experience wasn't just about play; it became a mission to find games that were both educational and creatively stimulating, to prove to my parents - and perhaps to myself - that games could be more than mindless entertainment.
         </div>
         <div className="subtitle">The Quest for Meaningful Gaming</div>
+        <ImageSection backgroundImage={testImage2}>
+      </ImageSection>
         <div className="body">
         My childhood quest has evolved into a lifelong journey to understand what truly makes a game 'good.' It's a quest filled with questions: What elements draw us to certain games? How do they impact us as individuals and as a community? Here, on this platform, I explore these questions, using my experiences and insights to delve into the art and science of gaming.
         </div>

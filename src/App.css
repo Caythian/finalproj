@@ -49,6 +49,26 @@
   flex-grow: 1;
   padding: 20px;
   padding-left: 30px;
+  /* min-height: 50vh;  */
+}
+
+.image-reveal-section {
+  height: 400px; /* Adjust the height as needed */
+  background-size:cover;
+  background-position: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Hide initially */
+}
+
+.image-reveal-section.show {
+  background-attachment: fixed;
+  opacity: 1; /* Show when in viewport */
+}
+
+.description{
+  background-color: rgba(89, 89, 54, 0.3);
+  color:#ebbf1e;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
