@@ -5,6 +5,7 @@ import App from './App';
 import Gamedesign from './Gamedesign';
 import Escapism from './Escapism';
 import More from './More';
+import About from './About';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/more",
     element: <More/>,
+  },
+  {
+    path: "/about",
+    element: <About/>,
   }
 ]);
 root.render(

@@ -1,0 +1,12 @@
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap');
+/* *{
+  background-color: #F5EBB8;
+} */
+.title{
+  font-family:'IBM Plex Sans JP', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #2b3121;
+  background-color: #F5EBB8;
+}

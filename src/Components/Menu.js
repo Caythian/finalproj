@@ -1,16 +1,31 @@
-import React from 'react';
+import React,{ useEffect, useState } from 'react';
 import '../App.css';
 import '../Components/Menu.css';
 import { Link } from 'react-router-dom';
 
 function Menu() {
-  return (
-    <div className="menu-container">
+  const [hideMenu, setHideMenu] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      // Adjust '100' to the height of your open menu bar
+      if (window.scrollY > 100) {
+        setHideMenu(true);
+      } else {
+        setHideMenu(false);
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+  return (<>
+    <div className={`menu-container ${hideMenu ? 'hide' : ''}`}>
       <ul className="main-menu">
         <li className="subpage">
           <Link to='/'>Home</Link>
-          <ul className="sub-menu">
-          </ul>
         </li>
         <li className="subpage">
           <Link to='/gamedesign'>Game Design</Link>
@@ -39,7 +54,8 @@ function Menu() {
         </li>
       </ul>
     </div>
-  );
+
+  </>);
 }
 
 export default Menu;
