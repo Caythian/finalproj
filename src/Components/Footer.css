@@ -3,7 +3,6 @@
     color: #2b3121;
     padding: 20px 0;
     text-align: center;  
-    margin-top: 10px;
   }
   
   .footer-content {
@@ -25,7 +24,6 @@
   
   @media (max-width: 600px) {
     .footer{
-      margin-top: 5px;
     }
     .footer-socials a {
       display: block; 
