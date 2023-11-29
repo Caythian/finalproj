@@ -11,6 +11,8 @@ export function Placeholder(){
 
 export function Divider(){
     return(
-        <div className="divider"></div>
+        <div className="divider">
+            
+        </div>
     )
 }
