@@ -3,15 +3,15 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #231f20;
+        fill: #89fa95;
       }
 
       .cls-2 {
         fill: none;
-        stroke: #fff;
+        stroke: #f5ebb8;
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 2px;
+        stroke-width: 5px;
       }
     </style>
   </defs>

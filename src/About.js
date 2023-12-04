@@ -2,12 +2,12 @@ import './App.css';
 import React,{useState,useEffect} from 'react';
 import Menu from './Components/Menu';
 import Footer from './Components/Footer';
-import {Placeholder, Divider,Bodylimager,Bodyrimagel} from './Components/Format';
+import {Placeholder, Divider} from './Components/Format';
 import ImageSection from './Components/Imagereveal';
-import testImage from './Images/Berlin-69.jpg';
-import testImage2 from './Images/test.png';
+//image import below
 import collage from './Images/Collage.png';
 import totkimg1 from './Images/07.jpeg';
+import totkimg2 from './Images/totkimg2.jpeg';
 
 function About(){
     const [showImage, setShowImage] = useState(false);
@@ -36,6 +36,10 @@ function About(){
         <div className="textholder">
         <div className="title">Welcome to Our Gaming Odyssey</div>
         <Divider/>
+        <div className="imageintext">
+            <img src={totkimg2}></img>
+        </div>
+        <Divider/>
         <div className="subtitle">our journey begins</div>
         <div className="body">
         Growing up, video games were a taboo in my household. My parents firmly believed that gaming would lead to a violent and intellectually deficient upbringing. However, my persistent passion for gaming eventually softened their stance, granting me a precious half-hour each weekend to dive into virtual worlds under their careful supervision. This experience wasn't just about play; it became a mission to find games that were both educational and creatively stimulating, to prove to my parents - and perhaps to myself - that games could be more than mindless entertainment.
@@ -58,7 +62,10 @@ function About(){
         </div>
         <div className="subtitle">Join Us in This Exploration</div>
         <div className="body">
-        Whether you're a gaming veteran, a curious onlooker, or somewhere in between, this space is for you. Together, let's explore the myriad ways games touch our lives, shape our experiences, and redefine the boundaries of virtual storytelling. Welcome to a journey of discovery, insight, and appreciation of the art of gaming. You can submit feedback about this website using the message box below!
+        Whether you're a gaming veteran, a curious onlooker, or somewhere in between, this space is for you. Together, let's explore the myriad ways games touch our lives, shape our experiences, and redefine the boundaries of virtual storytelling. Welcome to a journey of discovery, insight, and appreciation of the art of gaming. You can submit feedback about this website using the link below!
+        </div>
+        <div className="body">
+            <a className="email" href="mailto:xcatherine020202@gmail.com&subject=Big%20News&body=Feedback">Email Us</a>
         </div>
         <Divider/>  
         </div>      

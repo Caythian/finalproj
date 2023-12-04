@@ -36,6 +36,7 @@ function Menu() {
           </ul>
         </li>
         <li className="subpage">
+          {/* adding click event */}
           <Link to='/escapism'>Escapism</Link>
           <ul className="sub-menu">
             <li><Link to='/escapism/sub1'>sub1</Link></li>
@@ -47,10 +48,6 @@ function Menu() {
         </li>
         <li className="subpage">
           <Link to='/about'>About</Link>
-          <ul className="sub-menu">
-            <li><Link to='/about/sub1'>sub1</Link></li>
-            <li><Link to='/about/sub2'>sub2</Link></li>
-          </ul>
         </li>
       </ul>
     </div>

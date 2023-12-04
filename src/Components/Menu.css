@@ -5,9 +5,11 @@
     font-family:'IBM Plex Sans JP', sans-serif;
     display: flex;
     align-items:baseline;
-    justify-content: space-around;
+    justify-content:center;
     background-color: #f5EBB8;
     padding: 10px;
+    padding-left: 40px;
+    padding-right:40px;
     margin-bottom: 10px;
     position: fixed;
     top: 0;
