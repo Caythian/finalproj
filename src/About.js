@@ -48,8 +48,7 @@ function About(){
         <div className="subtitleimg">The Quest for Meaningful Gaming</div>
       </ImageSection>
         <div className="body">
-        My childhood quest has evolved into a lifelong journey to understand what truly makes a game 'good.' It's a quest filled with questions: What elements draw us to certain games? How do they impact us as individuals and as a community? Here, on this platform, I explore these questions, using my experiences and insights to delve into the art and science of gaming.
-        </div>
+        My childhood quest has evolved into a lifelong journey to understand what truly makes a game “good”, and what makes a game immersive. It's a quest filled with questions: What elements draw us to certain games? How do they impact us as individuals and as a community? Here, on this platform, I explore these questions, using my experiences and insights to delve into the art and science of gaming.         </div>
         <ImageSection backgroundImage={totkimg1}>
         <div className="subtitleimg">A Case Study in Excellence - "Zelda: Tears of the Kingdom"</div>
         </ImageSection>
@@ -58,7 +57,7 @@ function About(){
         </div>
         <div className="subtitle">Beyond Entertainment</div>
         <div className="body">
-        This website isn't just a space for reviews or discussions; it's a platform dedicated to understanding the deeper impact of video games. We investigate how games serve not only as a form of escapism but also as a medium that can enhance and reflect our understanding of reality. Through comprehensive analyses and discussions, we aim to unravel the complex relationship between video games, their players, and the world around us. 
+        This website isn't just a space for reviews or discussions; it's a platform dedicated to understanding the deeper impact of video games. We investigate how games serve not only as a form of escapism but also as a medium that can enhance and reflect our understanding of reality. Through comprehensive analyses and discussions about immersive gaming, we aim to unravel the complex relationship between video games, their players, and the world around us.
         </div>
         <div className="subtitle">Join Us in This Exploration</div>
         <div className="body">

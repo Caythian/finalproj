@@ -28,23 +28,28 @@ function Menu() {
           <Link to='/'>Home</Link>
         </li>
         <li className="subpage">
-          <Link to='/gamedesign'>Game Design</Link>
+          <Link to='/gamedesign'>Immersive Design</Link>
           <ul className="sub-menu">
-            <li><Link to='/gamedesign/sub1'>sub1</Link></li>
-            <li><Link to='/gamedesign/sub2'>sub2</Link></li>
-            <li><Link to='/gamedesign/sub3'>sub3</Link></li>
+            <li><Link to='/Gamedesign/sub1'>sub1</Link></li>
+            <li><Link to='/Gamedesign/sub2'>sub2</Link></li>
+            <li><Link to='/Gamedesign/sub3'>sub3</Link></li>
           </ul>
         </li>
         <li className="subpage">
-          {/* adding click event */}
           <Link to='/escapism'>Escapism</Link>
           <ul className="sub-menu">
-            <li><Link to='/escapism/sub1'>sub1</Link></li>
-            <li><Link to='/escapism/sub2'>sub2</Link></li>
+            <li><Link to='/Escapism/sub1'>sub1</Link></li>
+            <li><Link to='/Escapism/sub2'>sub2</Link></li>
+            <li><Link to='/Escapism/sub3'>sub3</Link></li>
           </ul>
         </li>
         <li className="subpage">
-          <Link to='/more'>More</Link>
+          <Link to='/more'>Future</Link>
+          <ul className="sub-menu">
+            <li><Link to='/More/sub1'>sub1</Link></li>
+            <li><Link to='/More/sub2'>sub2</Link></li>
+            <li><Link to='/More/sub3'>sub3</Link></li>
+          </ul>
         </li>
         <li className="subpage">
           <Link to='/about'>About</Link>
