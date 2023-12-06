@@ -52,9 +52,11 @@ function App() {
           <Divider/>
         <div className="floatingtitle">A journey beyond play</div>
         <div className="floatingsubtitle">the art of immersive gaming, inspired by "Zelda: Tears of the Kingdom"</div>
-        <div className="click-message">Click the icon to continue</div>
-        <img className={`icon ${isIconRotated ? 'rotated' : ''}`} src={icon} onClick={handleIconClick} alt="Icon"/>
-      </div>
+        <div className="clickicon">
+            <div className="click-message">Click the icon to continue</div>
+            <img className={`icon ${isIconRotated ? 'rotated' : ''}`} src={icon} onClick={handleIconClick} alt="Icon"/>
+        </div>
+       </div>
       <Divider/>
      
       {/* <div className="subtitle">Realism in an Open World</div>  */}

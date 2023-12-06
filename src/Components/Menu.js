@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Menu() {
   const [hideMenu, setHideMenu] = useState(false);
+  const [activeSubpage, setActiveSubpage] = useState(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -15,12 +16,23 @@ function Menu() {
         setHideMenu(false);
       }
     };
+
+
+  // Function to click
+  const toggleSubMenu = (subpage) => {
+    if (activeSubpage === subpage) {
+      setActiveSubpage(null);
+    } else {
+      setActiveSubpage(subpage);
+    }
+  };
     window.addEventListener('scroll', onScroll);
 
     return () => {
       window.removeEventListener('scroll', onScroll);
     };
   }, []);
+  
   return (<>
     <div className={`menu-container ${hideMenu ? 'hide' : ''}`}>
       <ul className="main-menu">

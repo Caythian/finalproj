@@ -93,39 +93,31 @@
 
   @media (max-width: 700px) {
     .menu-container {
-      flex-direction: column;
-      align-items: flex-start; 
+      align-items:baseline;
+      justify-content:center;
+      padding:2px;
     }
     .menu-container:hover{
         height:auto;
     }
     .main-menu {
-      flex-direction: column; 
       align-items: flex-start; 
       gap: 5px; 
     }
 
     .main-menu li {
-      font-size: medium; 
-      padding: 10px; 
+      font-size: 14px; 
     }
+ 
     .subpage {
       width: 100%; 
       padding: 10px; 
       position: static; 
       text-align: left; 
     }
-    .menu-container .main-menu .subpage .sub-menu {
-        display: none;
-      }
-  }
-  @media (hover: hover) {
-    .hover-area {
-      display: block; /* Make the hover area visible (but still invisible visually) on devices that support hover */
+    .sub-menu{
+      font-size: 10px;
+      padding: 10px 0; 
     }
-  
-    .hover-area:hover + .menu-container.hide {
-      display: flex; /* Or your original display type */
-    }
+
   }
-  /* QUESTION ABOUT MEDIA: how to make this into a onclick event for mobile */

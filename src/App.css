@@ -1,7 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap');
-/* *{
-  background-color: #F5EBB8;
-} */
+
 .placeholder{
   background-color:#F5EBB8;
   width: 100%;
@@ -119,7 +117,6 @@
   align-items: center; 
   height: 500px; 
   width: 100%;
-  z-index: -20;
   padding: 10px;
 }
 .imageintext img {
@@ -148,45 +145,77 @@
   justify-content: center; 
   text-decoration: none;
 }
+.clickicon{
+  position: absolute;
+  bottom: 0;
+  margin: auto; 
+  left:0;
+  right:0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
 
 .icon {
   max-width: 40px;
-  position: absolute;
-  left:49%;
-  bottom: 5%;
   transition: transform 0.3s;
+  margin: auto;
 }
+
 .icon.rotated {
-  transform: rotate(180deg); /* Rotate the icon 180 degrees */
+  transform-origin: center;
+  transform: rotate(180deg); 
 }
+
 .click-message {
-  display: inline-block;
-  margin-bottom: 10px;
+  display: inline; 
   font-size: 16px;
   color: #595936;
   background-color: #89fa95;
-  position: absolute;
-  bottom: 12%;
-  left:44%;
+  padding: 4px; 
+  margin: 10px;
+  border-radius: 4px; 
 }
 
 @media (max-width: 600px) {
-.placeholder{
-  height:240px;
-}
-.title{
-  font-size: 36px;
-}
-.subtitleimg{
-  font-size: 24px;
-  padding:5px;
-  padding-left: 25px;
-}
-.body{
-  font-size: 12px;
-  padding:9px;  
-  padding-left: 15px;
-  padding-right: 15px;
-}
-}
+    .placeholder {
+      height: 70px;
+    }
+    .title {
+      font-size: 24px; 
+      padding: 10px;
+    }
+    .subtitle, .subtitleimg, .floatingsubtitle {
+      font-size: 18px;
+      padding: 5px;
+    }
+    .body {
+      font-size: 14px; 
+      padding: 15px;
+    }
+    .imageintext {
+      height: auto; 
+      padding: 0px;
+    }
+    .imageintext img {
+      width: auto; 
+      max-height: 200px; 
+    }
+    .fixed-background {
+      height: 100vh; 
+    }
+    .icon {
+
+    }
+    .click-message {
+      position: absolute; 
+      bottom: 50px;
+      left: 50%; 
+      transform: translateX(-50%); 
+      font-size: 14px; 
+    }
+  }
+  
 
