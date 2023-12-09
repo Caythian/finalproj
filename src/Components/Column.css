@@ -2,6 +2,7 @@
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    height:auto;
   }
   .row {
     display: flex;
@@ -24,11 +25,11 @@
     color: #595936;
     display: flex;
     position: relative;
-    min-height: 450px;
     flex-direction: column;
     align-items: center;
     flex-basis: 30%; /*  the width of each column */
     padding: 20px;
+    padding-bottom: 80px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
@@ -70,11 +71,11 @@
   
   @media (max-width: 768px) {
     .row {
-      flex-direction: column; /* Stack the columns vertically on smaller screens */
+      flex-direction: column; 
     }
     
     .column {
-      flex-basis: 100%; /* Full width */
+      flex-basis: 100%;
     }
   }
   

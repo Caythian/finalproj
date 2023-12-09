@@ -3,7 +3,7 @@
 .placeholder{
   background-color:#F5EBB8;
   width: 100%;
-  height:70px;
+  height:80px;
   padding: 0px;
 }
 .divider{
@@ -133,9 +133,16 @@
   height: 100vh;
 }
 .description{
-  background-color: rgba(89, 89, 54, 0.3);
+  background-color: rgb(89, 89, 54);
   color:#ebbf1e;
   text-align: center;
+  padding:2px;
+  border-radius: 4px;
+}
+.descriptionsmol{
+  color:#2b3121;
+  text-align: center;
+  font-size: 14px;
 }
 .email{
   color:#89fa95;

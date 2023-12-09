@@ -1,0 +1,35 @@
+.mapanddes{
+    display: flex;
+    justify-content: center;
+    align-items: start;    
+    margin:5px;
+    gap:20px;
+}
+
+
+.leaflet-container {
+    height: 500px; 
+    width: 600px; 
+    background-color: #61dafb;
+    overflow: hidden;
+}
+.details-container {
+    width: 400px; /* Set a fixed width for the details container */
+    margin-left: 0px; /* Adds some space between the map and the details */
+    padding-top: 5px;
+    min-height: 100px; /* Set a minimum height */
+    gap:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(89,89,54,0.3);
+    border-radius: 4px;
+
+}
+
+.details-container img {
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
