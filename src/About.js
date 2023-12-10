@@ -1,5 +1,5 @@
 import './App.css';
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import Menu from './Components/Menu';
 import Footer from './Components/Footer';
 import {Placeholder, Divider} from './Components/Format';
@@ -14,14 +14,18 @@ function About(){
       const location = useLocation();
 
       useEffect(() => {
-        const hash = location.hash;
-        if (hash) {
-          const element = document.getElementById(hash.substring(1));
+        // Check if the current URL has a hash
+        if (location.hash) {
+          // If there's a hash, scroll to the element with that ID
+          const element = document.getElementById(location.hash.slice(1));
           if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            element.scrollIntoView();
           }
+        } else {
+          // If there's no hash, scroll to the top of the page
+          window.scrollTo(0, 0);
         }
-      }, [location.hash]);
+      }, [location]);
 
     return(
         <div>
@@ -31,7 +35,7 @@ function About(){
         <div className="title">Welcome to Our Gaming Odyssey</div>
         <Divider/>
         <div className="imageintext">
-            <img src={totkimg2}></img>
+            <img src={totkimg2}alt="sunset at cliff"></img>
         </div>
         <Divider/>
         <div className="subtitle" id="sub1">our journey begins</div>

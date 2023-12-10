@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState,useEffect} from 'react';
+import { useState} from 'react';
 import '../App.css';
 import './Map.css';
 import { MapContainer, ImageOverlay, Marker, Popup } from 'react-leaflet';
@@ -28,7 +28,6 @@ L.Icon.Default.mergeOptions({
     
 });
 const imageBounds = [[0, 0], [100, 200]]; // Use the calculated boundsWidth here
-const center = [(imageBounds[0][0] + imageBounds[1][0]) / 2, (imageBounds[0][1] + imageBounds[1][1]) / 2];
 const [selectedLocation, setSelectedLocation] = useState(null);
 
 const locations = {

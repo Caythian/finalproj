@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import Gamedesign from './Gamedesign';
 import Escapism from './Escapism';
-import More from './More';
+// import More from './More';
 import About from './About';
 import {
   createBrowserRouter,
@@ -27,10 +27,10 @@ const router = createBrowserRouter([
     path: "/escapism",
     element: <Escapism/>,
   },
-  {
-    path: "/more",
-    element: <More/>,
-  },
+  // {
+  //   path: "/more",
+  //   element: <More/>,
+  // },
   {
     path: "/about",
     element: <About/>,

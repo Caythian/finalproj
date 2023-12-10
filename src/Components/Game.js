@@ -9,7 +9,7 @@ import greenimg from '../Images/shrine.jpeg';
 import yellowimg from '../Images/root.jpeg';
 import violetimg from '../Images/totkimg21.jpeg';
 import pinkimg from '../Images/totkimg20.jpeg';
-// ... other images ...
+
 
 function Game() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);

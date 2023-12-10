@@ -1,13 +1,21 @@
 import React from 'react';
+import { useEffect } from 'react';
 import '../Components/Column.css';
 import '../App.css';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 import totkimg2 from '../Images/totkimg2.jpeg';
 import totkimg3 from '../Images/totkimg3.jpeg';
-import totkimg4 from '../Images/totkimg4.jpeg';
+// import totkimg4 from '../Images/totkimg4.jpeg';
 import totkimg8 from '../Images/totkimg8.jpeg';
 
 function Column() {
+    //update to top
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+    
   return (
     <div className="container">
       <div className="row">
@@ -23,12 +31,12 @@ function Column() {
           <img src={totkimg3} alt="sky islands"></img>
           <Link to="/escapism" className="button1">Click Here</Link> 
         </div>
-        <div className="column">
+        {/* <div className="column">
           <div className="h1">Future of Gaming</div>
           <div className="p1">Discover the potentiality of immersive gaming and its application beyond entertainment in the future.</div>
-          <img src={totkimg4} alt="Kakoriko Village"></img>
+          <img src={totkimg4} alt="Kakariko Village"></img>
           <Link to="/more" className="button1">Click Here</Link> 
-        </div>
+        </div> */}
         <div className="column">
           <div className="h1">About</div>
           <div className="p1">Learn about why the website exists and give feedback. </div>

@@ -1,24 +1,41 @@
 import './App.css';
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import Menu from './Components/Menu';
 import Footer from './Components/Footer';
 import './App.css';
 import {Placeholder, Divider} from './Components/Format';
 import { useLocation } from 'react-router-dom';
 import ImageSection from './Components/Imagereveal';
-import Column from './Components/Column';
 import RedditEmbed from './Components/Redditembed';
 import Videoplayer from './Components/Videoplayer';
+import Audio from './Components/Audio';
 //import image below
 import totkimg23 from './Images/totkimg23.jpg';
 import totkimg24 from './Images/totkimg24.png';
 import gaming from './Images/Gaming.jpg';
 
 function Escapism(){
+    const location = useLocation();
+
+    useEffect(() => {
+        // Check if the current URL has a hash
+        if (location.hash) {
+          // If there's a hash, scroll to the element with that ID
+          const element = document.getElementById(location.hash.slice(1));
+          if (element) {
+            element.scrollIntoView();
+          }
+        } else {
+          // If there's no hash, scroll to the top of the page
+          window.scrollTo(0, 0);
+        }
+      }, [location]);
+
     return(
         <div>
             <Menu/>
             <Placeholder/>
+            <Audio />
             <div className="textholder">
                 <div className="title">The Impact of Immersive Gaming: Escapism</div>
                 <div className="body">
@@ -59,6 +76,7 @@ function Escapism(){
                     subreddit="Yahaha_IRL"
                     />
                 <Divider/>
+                <div className="subtitle" id="sub3">Family Education</div>
                 <div className="body">
                     In the context of <span className="highlight">family education</span>, for instance, it is more constructive for parents to view gaming as a part of life rather than a negative influence. <span className="highlight"><a href="https://medium.com/a-parent-is-born/why-i-play-minecraft-with-my-kids-91658a3efeb2" target="_blank">Positive guidance</a></span> is key. Parents can choose family-friendly and educational games, and play alongside their children, demonstrating how to balance gaming with other activities. This approach fosters a healthier relationship with gaming and teaches time management skills.
                 </div>
