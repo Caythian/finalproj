@@ -64,6 +64,9 @@ function Menu() {
         </li>
         <li className="subpage">
           <Link to='/about'>About</Link>
+          <ul className="sub-menu">
+          <li><Link to='/About#sub5'>Contact Us</Link></li>
+          </ul>
         </li>
       </ul>
     </div>
