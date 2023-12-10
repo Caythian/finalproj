@@ -48,7 +48,6 @@ function Game() {
 
   return (
 <div>
-    <div className="subtitle">What color is this?</div>
     <div className="game-container">
       <div className="body">{currentQuestion.more}</div> 
       <img 

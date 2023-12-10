@@ -9,7 +9,6 @@ function Menu() {
 
   useEffect(() => {
     const onScroll = () => {
-      // Adjust '100' to the height of your open menu bar
       if (window.scrollY > 100) {
         setHideMenu(true);
       } else {
@@ -42,9 +41,9 @@ function Menu() {
         <li className="subpage">
           <Link to='/gamedesign'>Immersive Design</Link>
           <ul className="sub-menu">
-            <li><Link to='/Gamedesign/sub1'>sub1</Link></li>
-            <li><Link to='/Gamedesign/sub2'>sub2</Link></li>
-            <li><Link to='/Gamedesign/sub3'>sub3</Link></li>
+            <li><Link to='/Gamedesign#sub1'>Biomes</Link></li>
+            <li><Link to='/Gamedesign#sub2'>Details</Link></li>
+            <li><Link to='/Gamedesign#sub3'>Color</Link></li>
           </ul>
         </li>
         <li className="subpage">

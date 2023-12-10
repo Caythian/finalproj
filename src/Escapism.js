@@ -15,7 +15,7 @@ function Escapism(){
             <Menu/>
             <Placeholder/>
             <div className="textholder">
-                
+                <div className="title">The Impact of Immersive Gaming: Escapism</div>
             </div>
             <Footer></Footer>
         </div>
