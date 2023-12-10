@@ -17,6 +17,14 @@ import totkimg14 from '../Images/totkimg14.jpg';
 import tree from '../Images/tree.jpeg';
 import totkimg15 from '../Images/totkimg15.jpeg';
 import canyon from '../Images/canyon.jpeg';
+import totkimg25 from '../Images/totkimg25.png';
+import waterfall from '../Images/waterfall.jpeg';
+import totkimg26 from '../Images/totkimg26.png';
+import fall from '../Images/fall.jpeg';
+import totkimg27 from '../Images/totkimg27.jpg';
+import spiraljetty from '../Images/spiral.jpeg';
+import totkimg28 from '../Images/totkimg28.jpg';
+import Huaca from '../Images/Huaca.jpeg';
 
 function Map(){
     delete L.Icon.Default.prototype._getIconUrl;
@@ -66,6 +74,35 @@ const locations = {
         realloc:'Antelope Canyon in AZ, US',
         description:'The vally deep in the Gerudo region resembles the Antelope Canyon in Arizona, US.',
     },
+    faronforest:{
+        name:'Floria Bridge',
+        image1:totkimg25,
+        image2:waterfall,
+        realloc:'Iguazu Falls, Brazil and Argentina',
+        description:'The climate of the Faron region is tropical rainforest. The massive waterfall groups near the Floria Bridge resembles the Iguazu Falls in South America.'
+    },
+    akkala:{
+        name:"North Akkala",
+        image1:totkimg26,
+        image2:fall,
+        realloc:'temporate climate in autumn',
+        description:'The Akkala region is known for its autumn foliage like that of temporate climate in Autumn. It is a beautiful and peaceful region!'
+    },
+    spiral:{
+        name:"Rist Peninsula",
+        image1:totkimg27,
+        image2:spiraljetty,
+        realloc:'Spiral Jetty, Great Salt Lake',
+        description:'The rist Peninsula, in a shape of a spiral, clearly refers to the Spiral Jetty made by Robert Smithson in the Great Salt Lake, Utah, United States.'
+    },
+    Kara:{
+        name:"Kara Kara Bazaar",
+        image1:totkimg28,
+        image2:Huaca,
+        realloc:'Huacachina, Peru',
+        description:'A small Bazaar in the Gerudo dessert, Kara Kara Bazaar, looks exactly like the oasis in real world. For example, it looks very similar to Huacachina in Peru.'
+    },
+
 }
 const handleMarkerClick = (locationKey) => {
     if (selectedLocation && selectedLocation.name === locations[locationKey].name) {
@@ -80,11 +117,10 @@ const handleMarkerClick = (locationKey) => {
 const hyrulefield=[65,90];
 const gerudo=[50,50];
 const karusavalley=[50,18];
-const faronforest=[30,120]
+const faronforest=[19,135];
 const taobab=[35,78];
-const akkla=[83,173];
+const akkala=[83,173];
 const spiral=[80,190];
-const Kakariko=[58,138];
 const seres=[71,52];
 const Kara=[36,38];
 
@@ -107,7 +143,7 @@ return(
            Taobab Grassland
         </Popup>
     </Marker>
-    <Marker position={faronforest}>
+    <Marker position={faronforest} eventHandlers={{ click: () => handleMarkerClick('faronforest') }}>
         <Popup>
             Faron Rainforest
         </Popup>
@@ -117,19 +153,14 @@ return(
             Karusa Valley
         </Popup>
     </Marker>
-    <Marker position={akkla}>
+    <Marker position={akkala} eventHandlers={{ click: () => handleMarkerClick('akkala') }}>
         <Popup>
             North Akkala
         </Popup>
     </Marker>
-    <Marker position={spiral}>
+    <Marker position={spiral} eventHandlers={{ click: () => handleMarkerClick('spiral') }}>
         <Popup>
             Rist Peninsula
-        </Popup>
-    </Marker>
-    <Marker position={Kakariko}>
-        <Popup>
-            Kakariko Village
         </Popup>
     </Marker>
     <Marker position={seres} eventHandlers={{ click: () => handleMarkerClick('seres') }}>
@@ -137,7 +168,7 @@ return(
             Seres Scablands
         </Popup>
     </Marker>
-    <Marker position={Kara}>
+    <Marker position={Kara} eventHandlers={{ click: () => handleMarkerClick('Kara') }}>
         <Popup>
            Kara Kara Bazaar
         </Popup>

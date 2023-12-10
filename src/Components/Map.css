@@ -1,8 +1,8 @@
 .mapanddes{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: start;    
-    margin:5px;
+    align-items: center;    
     gap:20px;
 }
 
