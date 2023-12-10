@@ -5,10 +5,14 @@ import Footer from './Components/Footer';
 import {Placeholder, Divider} from './Components/Format';
 import { Routes, Route } from 'react-router-dom';
 import ImageSection from './Components/Imagereveal';
-import Column from './Components/Column';
 import Map from './Components/Intermap';
+import Game from './Components/Game';
 //import image below
 import totkimg10 from './Images/totkimg10.jpg';
+import totkimg8 from './Images/totkimg8.jpeg';
+import totkimg18 from './Images/totkimg18.jpeg';
+import totkimg17 from './Images/totkimg17.jpg';
+import totkimg16 from './Images/totkimg16.jpeg';
 
 function Gamedesign(){
     return(
@@ -33,7 +37,23 @@ function Gamedesign(){
                 </div>
                 <Map/>
                 <Divider/>
-                <div className="subtitle"></div>
+                <div className="subtitle">Big world, tiny details</div>
+                <div className="body">In "Zelda: Tears of the Kingdom," the game's meticulous attention to detail significantly enhances its realism. For instance, the grass moving when the player walks on, and jumping into a pond creates realistic water splashes, reinforcing the player's sense of presence in the game. </div>
+                <ImageSection backgroundImage={totkimg8} alt="Link riding horse over grass"></ImageSection>
+                <div className="body">One of the subtle yet impactful design is the particle effects. These effects visually signify environmental changes. </div>
+                <ImageSection backgroundImage={totkimg18} alt="Water temple particles">
+                    <div className="floatingbody">In the sky archipelago above the Zora Domain, low gravity and humidity are indicated by small blue particles floating in the air. </div>
+                </ImageSection>
+                <Divider/>
+                <ImageSection backgroundImage={totkimg16} alt="Particles in the depths"><div className="floatingbody">Conversely, in the Depths, a region characterized by evil and shadows, the stagnant air is represented by small grayish particles, evoking a sense of moldiness and mushroom spores. These details collectively contribute to the game's immersive experience.</div>
+                </ImageSection>
+                <Divider/>
+                <ImageSection backgroundImage={totkimg17} alt="gerudo at night"><div className="floatingbody">In "Zelda: Tears of the Kingdom," the Gerudo area exhibits a unique atmospheric effect at night. This is to visually represent the drastic temperature shift from the intense heat of the day to the freezing conditions at night. The nighttime sparkle in the atmosphere serves as an indicator of this change, enhancing the game's immersion and attention to environmental details. This feature exemplifies the game's commitment to creating a dynamic and realistic world, where environmental changes are not just felt but also seen.</div>
+                </ImageSection>
+                <Divider/>
+                <div className="body">In "Zelda: Tears of the Kingdom," the strategic use of color psychology is evident in both thematic design and the creation of fantastical items. The game's expertise in utilizing colors contributes significantly to crafting an immersive experience. This choice of colors is not just aesthetic; it's also designed to evoke certain psychological responses in players, enhancing their emotional and sensory engagement with the game world. This aspect of design demonstrates the game's deep understanding of how color can impact a player's experience and mood.</div>
+                <div className="body">Below is a simple game demonstrating how the color psychology is utilized in "Zelda: Tears of the Kingdom”.</div>
+                <Game/>
             </div>
             <Footer/>
         </div>

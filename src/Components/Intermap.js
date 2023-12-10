@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState,useEffect} from 'react';
 import '../App.css';
 import './Map.css';
 import { MapContainer, ImageOverlay, Marker, Popup } from 'react-leaflet';
@@ -67,13 +67,6 @@ const locations = {
         realloc:'Antelope Canyon in AZ, US',
         description:'The vally deep in the Gerudo region resembles the Antelope Canyon in Arizona, US.',
     },
-        // gerudo:{
-    //     name:'',
-    //     image1:'',
-    //     image2:'',
-    //     realloc:'',
-    //     description:'',
-    // },
 }
 const handleMarkerClick = (locationKey) => {
     if (selectedLocation && selectedLocation.name === locations[locationKey].name) {
@@ -95,7 +88,6 @@ const spiral=[80,190];
 const Kakariko=[58,138];
 const seres=[71,52];
 const Kara=[36,38];
-
 
 return(
 <div className="mapanddes" id="map">

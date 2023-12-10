@@ -1,0 +1,14 @@
+.imagesection {
+    background-size: cover;
+    height: 400px; 
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .imagesection {
+        background-size: contain;
+        height: 400px;
+        background-repeat: no-repeat;
+}
+}

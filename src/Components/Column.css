@@ -46,28 +46,6 @@
   .column img{
     max-width: 100%;
   }
-
-  .button {
-    display: inline-block;
-    background-color: #329a5d;
-    color: #F5ebb8;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    position:absolute;
-    margin-top:10px;
-    bottom:5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none; /* Removes underline from links */
-    text-align: center;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #89fa95;
-  }
   
   @media (max-width: 768px) {
     .row {

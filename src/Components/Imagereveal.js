@@ -1,19 +1,15 @@
 import React from 'react';
+import './ImageSection.css'; // Import the CSS file
 
 function ImageSection({ backgroundImage, children }) {
-  const sectionStyle = {
-    background: `url(${backgroundImage}) no-repeat center center/cover fixed`,
-    backgroundSize: 'cover',
-    height: '400px', // Adjust the height as needed
-    opacity: 1, // You can control other styles or add more based on props
-    transition: 'opacity 0.3s ease-in-out',
-  };
-
-  return (
-    <div id="image-reveal-section" style={sectionStyle}>
-      {children}
-    </div>
-  );
+    return (
+        <div 
+            className="imagesection" 
+            id="image-reveal-section" 
+            style={{ background: `url(${backgroundImage}) no-repeat center center/cover fixed` }}>
+            {children}
+        </div>
+    );
 }
 
 export default ImageSection;

@@ -97,7 +97,20 @@
   padding-right: 50px;
   /* min-height: 50vh;  */
 }
-
+.floatingbody{
+  font-size: 20px;
+  font-weight: 500;
+  color: #F5EBB8;
+  border-color: rgba(89, 89, 54, 0.5);
+  background-color: rgba(89, 89, 54, 0.2);
+  flex-grow: 1;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.floatingbody:hover{
+  background-color: rgba(89, 89, 54, 0.8);
+}
 .image-reveal-section {
   height: 400px; /* Adjust the height as needed */
   background-size:cover;
@@ -183,8 +196,32 @@
   background-color: #89fa95;
   padding: 4px; 
   margin: 10px;
+  border-style: hidden;
   border-radius: 4px; 
 }
+.button1 {
+  display: inline-block;
+  background-color: #329a5d;
+  color: #F5ebb8;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  position:absolute;
+  margin-top:10px;
+  bottom:5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none; /* Removes underline from links */
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.button1:hover {
+  background-color: #89fa95;
+}
+
+
 
 @media (max-width: 600px) {
     .placeholder {
@@ -202,6 +239,16 @@
       font-size: 14px; 
       padding: 15px;
     }
+    .floatingbody {
+      font-size: 14px; 
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .floatingtitle:hover, .floatingsubtitle:hover {
+      font-size: 26px; 
+    }
     .imageintext {
       height: auto; 
       padding: 0px;
@@ -212,9 +259,6 @@
     }
     .fixed-background {
       height: 100vh; 
-    }
-    .icon {
-
     }
     .click-message {
       position: absolute; 
