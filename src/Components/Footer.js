@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css'; // Make sure to create Footer.css in the same directory
 
 function Footer() {
@@ -8,10 +9,11 @@ function Footer() {
       <div className="footer-content">
         <p>© {year} Created by Xuecong Wang. All Rights Reserved.</p>
         <div className="footer-socials">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a>
-          {/* Add more social links as needed */}
+        <Link to='/'>Home</Link>
+        <Link to='/gamedesign'>Immersive Design</Link>
+        <Link to='/escapism'>Escapism</Link>
+        {/* <Link to='/more'>Future</Link> */}
+        <Link to='/about'>About</Link>
         </div>
       </div>
     </footer>
