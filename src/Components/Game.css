@@ -1,5 +1,5 @@
 .grayscale {
-    filter: grayscale(100%); /* full black and white */
+    filter: grayscale(100%); 
   }
   .game-container {
     display: flex;

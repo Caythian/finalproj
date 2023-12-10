@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 1200px; 
   }
   .h1{
     font-size: 20px;
@@ -32,11 +32,11 @@
     padding-bottom: 80px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   .column h3 {
-    border-bottom: 2px solid #595936; /* Optional style */
+    border-bottom: 2px solid #595936; 
     padding-bottom: 5px;
   }
   

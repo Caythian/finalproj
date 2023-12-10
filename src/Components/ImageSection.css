@@ -1,14 +1,18 @@
 .imagesection {
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     height: 400px; 
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    /* display: flex; */
 }
 
 @media (max-width: 600px) {
     .imagesection {
-        background-size: contain;
-        height: 400px;
         background-repeat: no-repeat;
-}
+        background-attachment: scroll;
+        height:200px;
+    }
 }
